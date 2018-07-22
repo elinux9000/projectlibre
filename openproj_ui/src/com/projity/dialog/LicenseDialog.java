@@ -75,7 +75,7 @@ public final class LicenseDialog extends AbstractDialog {
 	JEditorPane license = null;
 	JEditorPane thirdParty = null;
 	private boolean init = false;
-	private static boolean validated = Preferences.userNodeForPackage(LicenseDialog.class).getBoolean("validatedLicense",false); //$NON-NLS-1$
+	private static boolean validated = true;//Preferences.userNodeForPackage(LicenseDialog.class).getBoolean("validatedLicense",false); //$NON-NLS-1$
 	private static boolean resetData;
 	public static boolean showDialog(Frame owner, boolean force) {
 		resetData=!force;
